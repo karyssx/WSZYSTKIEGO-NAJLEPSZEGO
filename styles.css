@@ -1,0 +1,59 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url('balony.jpg.jpg');
+    background-size: cover; /* dopasowanie obrazka do wielkości okna przeglądarki */
+    background-position: center; /* wyśrodkowanie obrazka */
+    background-repeat: no-repeat; /* zapobiega powielaniu obrazka */
+}
+.container {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+h1 {
+    color: #ff5e78; /* różowy odcień */
+    text-align: center;
+}
+p {
+    color: #555;
+    font-size: 18px;
+    line-height: 1.6;
+}
+.signature {
+    text-align: right;
+    margin-top: 20px;
+}
+.container {
+    position: relative; /* Dodanie pozycji względnej */
+}
+.button {
+    position: absolute; /* Ustawienie przycisku w oparciu o kontener */
+    bottom: 20px; /* Odległość od dołu */
+    left: 50%; /* Wycentrowanie poziome */
+    transform: translateX(-50%); /* Wycentrowanie poziome */
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #ff5e78;
+    color: #fff;
+    border: none;
+    border-radius: 20px;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.button:hover {
+    background-color: #e64a5b; /* zmiana koloru podczas najechania myszką */
+}
+.image-container {
+    text-align: center; /* Umieszczenie obrazka na środku */
+}
+.image-container img {
+    max-width: 40%; /* Obrazek nie będzie większy niż jego kontener */
+    height: auto; /* Zachowanie proporcji obrazka */
+}
